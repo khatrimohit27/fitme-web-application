@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>fitme.com</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a href="index.html" class="logo"
+              ><strong>Choose Fitness with FitMe</strong></a
+            >
+            <ul class="icons">
+              <li>
+                <a href="#" class="icon brands fa-twitter"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands fa-facebook-f"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+
+              <li>
+                <a href="#" class="icon brands fa-instagram"
+                  ><span class="label">Instagram</span></a
+                >
+              </li>
+            </ul>
+          </header>
+          <!-- Banner -->                                         
+              <form action="/signup" method="POST">
+               <h2 >Enter your details to create an account:</h2>
+    
+               <fieldset style="margin-bottom: 2em;"><h3 style="display: inline; margin-right: 1em;">Date of Birth:</h3>
+               <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+               </fieldset>
+              
+               <fieldset style="margin-bottom: 1em;">
+               <h3 style="display: inline; margin-right: 1em;">Gender:</h3>
+                 <input type="radio" id="male" name="gender" value="Male">
+                 <label for="male">Male</label>
+                 <input type="radio" id="female" name="gender" value="Female">
+                 <label for="female">Female</label>
+                 <input type="radio" id="others" name="gender" value="Others">
+                 <label for="others">Others</label>
+                </fieldset>
+                             
+               <fieldset style="margin-bottom: 2em;">
+               <h3 style="display: inline; margin-right: 1em;">Height in Feet:</h3>
+               <input type="number" name="height" required></fieldset>
+               <fieldset style="margin-bottom: 2em;">
+               <h3 style="display: inline; margin-right: 1em;">Weight in Kgs:</h3>
+               <input type="number" name="weight" required>
+               </fieldset>
+
+               <fieldset style="margin-bottom: 2em;">
+               <h3>What's your main goal?</h3>
+               <div>
+                 <input type="radio" id="fatLoss" name="goal" value="Fat Loss">
+                 <label for="fatLoss">Fat Loss</label>
+                 <input type="radio" id="muscleGain" name="goal" value="Muscle Gain">
+                 <label for="muscleGain">Muscle Gain</label>
+                 <input type="radio" id="overallFitness" name="goal" value="Overall Fitness">
+                 <label for="overallFitness">Overall Fitness</label>
+               </div>
+               </fieldset>
+               
+               <fieldset style="margin-bottom: 2em;">
+               <h3>What type of food you prefer?</h3>
+               <div>
+                 <input type="radio" id="vegetarian" name="foodPreference" value="Vegetarian">
+                 <label for="vegetarian">Vegetarian</label>
+                 <input type="radio" id="nonVegetarian" name="foodPreference" value="Non-Vegetarian">
+                 <label for="nonVegetarian">Non-Vegetarian</label>
+               </div>
+               </fieldset>
+
+               <fieldset style="margin-bottom: 2em;">
+               <h3>How are your eating habits?</h3>
+               <div>
+                 <input type="radio" id="alternateDays" name="eatingHabits" value="Alternate Days">
+                 <label for="alternateDays">I eat outside on alternate days or twice a week</label>
+                 <input type="radio" id="onceOrTwice" name="eatingHabits" value="Once or Twice">
+                 <label for="onceOrTwice">I eat outside food once or twice a week</label>
+                 <input type="radio" id="homeCooked" name="eatingHabits" value="Home Cooked">
+                 <label for="homeCooked">I mostly eat fresh and home-cooked food</label>
+               </div>
+               </fieldset>
+
+               <fieldset style="margin-bottom: 2em;">
+               <h3>How familiar are you with workouts?</h3>
+               <div>
+                 <input type="radio" id="beginner" name="workoutFamiliarity" value="Beginner">
+                 <label for="beginner">Beginner</label>
+                 <input type="radio" id="intermediate" name="workoutFamiliarity" value="Intermediate">
+                 <label for="intermediate">Intermediate</label>
+                 <input type="radio" id="advanced" name="workoutFamiliarity" value="Advanced">
+                 <label for="advanced">Advanced</label>
+               </div>
+               </fieldset>
+    
+               <h3>How would you describe your typical day?</h3>
+               <div>
+                 <input type="radio" id="stationary" name="typicalDay" value="Stationary">
+                 <label for="stationary">No activity or Stationary</label>
+                 <input type="radio" id="slightMovement" name="typicalDay" value="Slight Movement">
+                 <label for="slightMovement">Mostly sitting or slight movement</label>
+                 <input type="radio" id="active" name="typicalDay" value="Active">
+                 <label for="active">Active</label>
+               </div>
+    
+               <h3>How much sleep do you usually get?</h3>
+               <div>
+                 <input type="radio" id="lessThan6" name="sleep" value="Less than 6 hours">
+                 <label for="lessThan6">Less than 6 hours</label>
+                 <input type="radio" id="6to7" name="sleep" value="6 to 7 hours">
+                 <label for="6to7">6 to 7 hours</label>
+                 <input type="radio" id="8orMore" name="sleep" value="8 or more hours">
+                 <label for="8orMore">8 hours or more</label>
+               </div>
+    
+               <h3>What’s your daily water intake?</h3>
+               <div>
+                 <input type="radio" id="lessThan1L" name="waterIntake" value="Less than 1 litre">
+                 <label for="lessThan1L">Less than 1 litre</label>
+                 <input type="radio" id="1to2L" name="waterIntake" value="1 to 2 litres">
+                 <label for="1to2L">1 or 2 litres</label>
+                 <input type="radio" id="3LOrMore" name="waterIntake" value="3 litres or more">
+                 <label for="3LOrMore">3 litres or more</label>
+               </div>
+    
+               <h3>Do you smoke?</h3>
+               <div>
+                 <input type="radio" id="smokeYes" name="smoke" value="Yes">
+                 <label for="smokeYes">Yes</label>
+                 <input type="radio" id="smokeNo" name="smoke" value="No">
+                 <label for="smokeNo">No</label>
+               </div>
+    
+               <h3>If yes, how many cigarettes do you smoke in a day?</h3>
+               <div>
+                 <input type="radio" id="moreThan15" name="cigarettesPerDay" value="More than 15">
+                 <label for="moreThan15">More than 15</label>
+                 <input type="radio" id="6to15" name="cigarettesPerDay" value="6 to 15">
+                 <label for="6to15">6 to 15</label>
+                 <input type="radio" id="1to5" name="cigarettesPerDay" value="1 to 5">
+                 <label for="1to5">1 to 5</label>
+               </div>
+    
+               <h3>Do you drink alcohol?</h3>
+               <div>
+                 <input type="radio" id="alcoholYes" name="alcohol" value="Yes">
+                 <label for="alcoholYes">Yes</label>
+                 <input type="radio" id="alcoholNo" name="alcohol" value="No">
+                 <label for="alcoholNo">No</label>
+               </div>
+    
+               <h3>If yes, how often?</h3>
+               <div>
+                 <input type="radio" id="severalTimes" name="alcoholFrequency" value="Several times a week">
+                 <label for="severalTimes">Several times a week</label>
+                 <input type="radio" id="onceOrTwice" name="alcoholFrequency" value="Once or twice a week">
+                 <label for="onceOrTwice">Once or twice a week</label>
+                 <input type="radio" id="occasionally" name="alcoholFrequency" value="Occasionally">
+                 <label for="occasionally">Occasionally</label>
+               </div>
+               <br>
+               
+               <button type="submit">Sign Up</button>
+               <br>
+               <br>
+               <br>
+               <div class="form-footer">
+                 Already have an account? <a href="login.html">Log in</a>
+               </div>
+              </form>
+              <hr>                         
+        </div>
+      </div>
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <!-- Menu -->
+          <nav id="menu">
+            <header class="major">
+              <h2>Menu</h2>
+            </header>
+            <ul>              
+              <li><a href="loggedin.html">BACK</a></li>
+            </ul>
+          </nav>
+          <!-- Footer -->
+          <footer id="footer">
+            <p class="copyright">
+              &copy; Untitled. All rights reserved. Demo Images:
+              <a href="https://unsplash.com">Unsplash</a>. Design:
+              <a href="https://html5up.net">HTML5 UP</a>.
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
